@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:wght@500&display=swap');
+
+#title{
+    margin-left:100px;
+    margin-top:50px;
+}
+.top-section   {
+    display:flex;
+    margin:100px;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 700;
+    border: 0;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.first-part{
+    font-family: Poppins;
+font-style: bold;
+font-size: 20px
+}
+#preebook{
+    background-color:#E02C6D;
+    color: white;
+    border-radius: 41px;
+    width: 196px;
+    height: 44px;
+    font-weight: 700;
+
+}
+
+hr{
+        border: 1px solid #D1D1D1;
+        margin-bottom: 27px;
+        width:80%;
+}   
+
+    .product-rating{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .fa-star{
+        font-size:12px;
+        display:flex;
+        justify-content: flex-start;
+    }
+
+    .fa-star.filled{
+        color:#FFC014;
+    
+    }
+    .fa-star.empty{
+        color: #AEAEAE;
+    
+    }
+.item{
+
+    display:grid;
+    grid-template-column: repeat(3,1fr);
+    grid-column-gap: 24px;
+    margin:5px;
+   
+ 
+}
+
+.items{
+    display:flex;
+    align-itmes:center;
+
+}
+
+.item .banner img{
+    
+    width: 300px;
+    height:256px;
+    border-radius: 5px;
+
+    }
+
+
+    .more .fas-fa{
+        color : #E02C6DDE;
+        margin:2px;
+
+    }
+    
+    .more{
+        width:75px;
+        height:24px;
+        display:flex;
+        justify-content: flex-end;
+
+    }
+   footer{
+      display:flex;
+      justify-content: center;
+      align-items:center;
+
+       background-color: #191970;
+       color: #FFFFFF;
+       height:200px;
+       width:100%;
+
+   }
+
+
+   @media only screen and (max-width:688px)
+   {
+   .container{
+    width:100%;
+}
+.items, .top-section, {
+   
+    grid-template-column: repeat(1,1fr);
+
+
+}
+
+.items, .top-section{
+    flex-direction: column;
+}
+
+}
+
+@media only screen and (min-width:688px) and (max-width:992px)
+{
+    .container{
+        width:100%;
+    }
+    .items, .top-section{
+        grid-template-column: repeat(1,1fr);
+    }
+}
+
+
+   
+   
